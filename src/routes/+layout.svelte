@@ -10,7 +10,6 @@
 	});
 </script>
 
-<main class="min-h-screen">
+<main class="min-h-screen bg-void">
 	<slot />
 </main>
-

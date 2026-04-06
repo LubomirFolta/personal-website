@@ -1,90 +1,103 @@
 // Content - životopis Ľubomír Foľta
 export const hero = {
 	name: "Ľubomír Foľta",
-	title: "IT Nadšenec & Servisný Technik",
-	subtitle: "Venujem sa technológiám, hardvéru a riešeniu technických problémov — od oprav mobilných zariadení po budovanie spoľahlivých IT riešení."
+	title: "Web Developer & IT Nadšenec",
+	subtitle: "Webový vývojár so skúsenosťami v SvelteKit, TypeScript a cloud technológiách. Študent inžinierského štúdia na TUKE."
 };
 
-export const about = `Volám sa Ľubomír Foľta a som IT nadšenec, servisný technik a študent Počítačových sietí na Technickej univerzite v Košiciach. Dlhodobo sa venujem technológiám, hardvéru a riešeniu technických problémov — či už ide o opravy mobilných zariadení, diagnostiku počítačov, alebo budovanie spoľahlivých IT riešení. Technológie ma sprevádzajú od základnej školy a postupne sa z hobby stala profesia.
+export const about = `Volám sa Ľubomír Foľta a som motivovaný a spoľahlivý IT nadšenec so silným záujmom o technológie a riešenie problémov.
 
-Počas svojho štúdia aj práce som si vybudoval silné technické základy, pričom najviac ma napĺňa praktická práca v oblasti servisu a moderných technológií. Mojou hlavnou motiváciou je pochopiť, ako veci fungujú „pod kapotou", a vytvárať riešenia, ktoré sú rýchle, efektívne a udržateľné.
+Rád sa učím nové nástroje a prístupy, pracujem na praktických projektoch a zlepšujem svoje technické zručnosti. Som adaptabilný, detailne orientovaný a schopný pracovať samostatne aj v tímovom prostredí.
 
-Popri štúdiu a práci sa aktívne vzdelávam v oblastiach počítačových sietí, programovania a moderných technológií. Sledujem trendy v IT svete, učím sa nové nástroje, experimentujem s technológiami a rád pracujem na malých projektoch, ktoré mi pomáhajú zlepšovať moje technické aj analytické schopnosti.
+Aktuálne pracujem ako webový vývojár vo Fylom s.r.o., kde vyvíjam moderné webové aplikácie pomocou SvelteKit, TypeScript a Appwrite. Zároveň študujem inžinierske štúdium Informačných a komunikačných technológií na TUKE.
 
-Okrem technológií sa vo voľnom čase venujem športu, videohrám, autám a sledovaniu noviniek zo sveta digitálneho prostredia. Mám rád poriadok v práci, systematické riešenia a profesionálny prístup ku každej úlohe, či ide o drobnú opravu alebo väčší projekt.`;
+Mám praktické skúsenosti z IT servisu, vývoja AI aplikácií a cloudových platforiem. Moja motivácia je neustále sa rozvíjať a prinášať hodnotu v technických projektoch.`;
 
 export const experiences = [
 	{
+		title: "Web Developer",
+		company: "Fylom s.r.o.",
+		period: "09/2025 – súčasnosť",
+		description: [
+			"Vývoj moderných webových aplikácií pomocou SvelteKit, TypeScript, HTML a CSS",
+			"Tvorba a úprava UI dizajnov so zameraním na responzívne a užívateľsky prívetivé rozhrania",
+			"Práca s Appwrite pre backendové funkcie, autentifikáciu a správu dát",
+			"Integrácia API a prepojenie frontendových aplikácií s backendovými službami",
+			"Vytvorenie vlastného CMS riešenia pre správu obsahu",
+			"Správa nasadenia na Vercel vrátane konfigurácie prostredia a produkčných nastavení",
+			"Konfigurácia domén a nastavení súvisiacich s nasadením"
+		]
+	},
+	{
+		title: "AI Chatbot - Univerzitný projekt",
+		company: "Technická univerzita v Košiciach",
+		period: "09/2025 – 01/2026",
+		description: [
+			"Vývoj AI chatbota pomocou Python (Flask) a OpenAI API",
+			"Projektový manažment podľa Scrum princípov (5-členný tím)",
+			"Nasadenie aplikácie na cloudovej platforme Azure"
+		]
+	},
+	{
 		title: "Servisný technik",
-		company: "PCexpres",
+		company: "PCexpres, s.r.o.",
 		period: "08/2024 – 06/2025",
 		description: [
-			"Oprava telefónov, počítačov a rôznej elektroniky",
-			"Diagnostika hardvérových a softvérových problémov",
-			"Komunikácia so zákazníkmi",
-			"Práca s moderným servisným vybavením"
-		]
-	},
-	{
-		title: "Študent - Počítačové siete",
-		company: "Technická univerzita v Košiciach",
-		period: "2021 – súčasnosť",
-		description: [
-			"Inžinierske štúdium zamerané na siete",
-			"Výpočtová technika a informatika",
-			"Praktické zručnosti v oblasti počítačových sietí",
-			"Aktívne vzdelávanie v moderných technológiách"
-		]
-	},
-	{
-		title: "Študent - Priemyselná informatika",
-		company: "SPŠ Elektrotechnická Košice",
-		period: "2017 – 2021",
-		description: [
-			"Zameranie na informatiku a elektroniku",
-			"Základy programovania a technických systémov",
-			"Praktické zručnosti v hardvére a softvére",
-			"Technické vzdelanie v oblasti IT"
+			"Diagnostika, montáž, inštalácia a servis PC/notebookov",
+			"Práca s Windows a Linux operačnými systémami",
+			"Zákaznícka podpora a riešenie softvérových problémov",
+			"Oprava a servis mobilných zariadení"
 		]
 	}
 ];
 
 export const skills = [
-	// Servis a opravy
-	{ name: "Oprava mobilných zariadení", category: "Servis & Opravy" },
-	{ name: "Oprava a diagnostika PC", category: "Servis & Opravy" },
-	{ name: "Hardvér a elektronika", category: "Servis & Opravy" },
-	{ name: "Práca s technickými nástrojmi", category: "Servis & Opravy" },
-	
-	// Operačné systémy
-	{ name: "Windows", category: "Operačné systémy" },
-	{ name: "Linux", category: "Operačné systémy" },
-	{ name: "Android", category: "Operačné systémy" },
-	{ name: "iOS", category: "Operačné systémy" },
-	
-	// Programovanie
-	{ name: "C", category: "Programovanie" },
-	{ name: "SQL", category: "Programovanie" },
-	{ name: "HTML", category: "Programovanie" },
+	// Programovanie, Frameworky & Dáta
+	{ name: "SvelteKit", category: "Programovanie" },
+	{ name: "TypeScript", category: "Programovanie" },
+	{ name: "JavaScript", category: "Programovanie" },
+	{ name: "Python", category: "Programovanie" },
 	{ name: "CSS", category: "Programovanie" },
-	{ name: "Git", category: "Programovanie" },
-	
-	// Sieťové technológie
-	{ name: "Počítačové siete", category: "Sieťové technológie" },
-	{ name: "Konfigurácia sietí", category: "Sieťové technológie" },
-	{ name: "Sieťová infraštruktúra", category: "Sieťové technológie" },
-	
-	// Soft skills
-	{ name: "Systematické riešenie problémov", category: "Osobné zručnosti" },
-	{ name: "Technická diagnostika", category: "Osobné zručnosti" },
-	{ name: "Komunikácia so zákazníkmi", category: "Osobné zručnosti" }
+	{ name: "HTML", category: "Programovanie" },
+	{ name: "MATLAB", category: "Programovanie" },
+	{ name: "SQL", category: "Programovanie" },
+	{ name: "JSON", category: "Programovanie" },
+	{ name: "GitHub", category: "Programovanie" },
+	{ name: "Appwrite", category: "Programovanie" },
+	{ name: "Web Development", category: "Programovanie" },
+
+	// AI & Modely
+	{ name: "OpenAI API", category: "AI & Modely" },
+	{ name: "LLM Tools", category: "AI & Modely" },
+	{ name: "Prompt Engineering", category: "AI & Modely" },
+
+	// Systémy & Cloud
+	{ name: "Azure", category: "Systémy & Cloud" },
+	{ name: "Microsoft Office", category: "Systémy & Cloud" },
+	{ name: "Windows", category: "Systémy & Cloud" },
+	{ name: "GNU/Linux", category: "Systémy & Cloud" },
+	{ name: "MacOS", category: "Systémy & Cloud" },
+
+	// Servis & Hardvér
+	{ name: "Montáž a servis PC", category: "Servis & Hardvér" },
+	{ name: "Oprava počítačov", category: "Servis & Hardvér" },
+	{ name: "Oprava mobilov", category: "Servis & Hardvér" },
+
+	// Osobné zručnosti
+	{ name: "Zákaznícky servis", category: "Osobné zručnosti" },
+	{ name: "Tímová práca", category: "Osobné zručnosti" },
+	{ name: "Analytické riešenie problémov", category: "Osobné zručnosti" },
+	{ name: "Proaktivita", category: "Osobné zručnosti" },
+	{ name: "Technická komunikácia", category: "Osobné zručnosti" },
+	{ name: "Sociálne médiá", category: "Osobné zručnosti" },
+	{ name: "Digitálne spracovanie obrazu", category: "Osobné zručnosti" }
 ];
 
 export const contact = {
 	email: "lubomir.folta@gmail.com",
 	location: "Košice, Slovensko",
-	linkedin: "linkedin.com/in/ľubomír-foľta-7080aa278",
-	website: "lubomirfolta.com"
+	linkedin: "www.linkedin.com/in/lubomirfolta",
+	website: "www.lubomirfolta.com"
 };
 
 export const languages = [
@@ -93,10 +106,11 @@ export const languages = [
 
 export const interests = [
 	"Technológie",
-	"Počítače",
+	"AI & Machine Learning",
+	"Cloud Computing",
+	"Web Development",
 	"Mobilné zariadenia",
 	"Šport",
 	"Video hry",
-	"Digitálne trendy",
 	"Autá"
 ];

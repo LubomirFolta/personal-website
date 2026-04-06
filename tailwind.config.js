@@ -5,62 +5,82 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'primary': {
-					50: '#f0f9ff',
-					100: '#e0f2fe',
-					200: '#bae6fd',
-					300: '#7dd3fc',
-					400: '#38bdf8',
-					500: '#0ea5e9',
-					600: '#0284c7',
-					700: '#0369a1',
-					800: '#075985',
-					900: '#0c4a6e',
-					950: '#082f49'
+				'void': '#050510',
+				'void-light': '#0A0A1F',
+				'void-card': '#0D0D24',
+				'surface': {
+					DEFAULT: '#111128',
+					light: '#16163A',
 				},
-				'accent': {
-					50: '#fff7ed',
-					100: '#ffedd5',
-					200: '#fed7aa',
-					300: '#fdba74',
-					400: '#fb923c',
-					500: '#f97316',
-					600: '#ea580c',
-					700: '#c2410c',
-					800: '#9a3412',
-					900: '#7c2d12'
-				}
+				'neon': {
+					purple: '#A855F7',
+					magenta: '#D946EF',
+					indigo: '#6D28D9',
+					blue: '#3B82F6',
+				},
+				'muted': '#94A3B8',
 			},
 			fontFamily: {
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
-				'display': ['Poppins', 'sans-serif']
+				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
 			},
 			animation: {
-				'slide-up': 'slide-up 0.6s ease-out',
-				'fade-in': 'fade-in 0.8s ease-out',
-				'scale-in': 'scale-in 0.4s ease-out',
-				'float': 'float 6s ease-in-out infinite'
+				'fade-up': 'fadeUp 0.7s ease-out both',
+				'fade-in': 'fadeIn 0.8s ease-out both',
+				'scale-in': 'scaleIn 0.5s ease-out both',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+				'gradient-shift': 'gradientShift 8s ease infinite',
+				'spin-slow': 'spin 30s linear infinite',
+				'drift': 'drift 20s ease-in-out infinite',
+				'beam': 'beam 3s ease-in-out infinite',
 			},
 			keyframes: {
-				'slide-up': {
-					'0%': { transform: 'translateY(30px)', opacity: 0 },
-					'100%': { transform: 'translateY(0)', opacity: 1 }
+				fadeUp: {
+					'0%': { transform: 'translateY(24px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' },
 				},
-				'fade-in': {
-					'0%': { opacity: 0 },
-					'100%': { opacity: 1 }
+				fadeIn: {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
 				},
-				'scale-in': {
-					'0%': { transform: 'scale(0.95)', opacity: 0 },
-					'100%': { transform: 'scale(1)', opacity: 1 }
+				scaleIn: {
+					'0%': { transform: 'scale(0.95)', opacity: '0' },
+					'100%': { transform: 'scale(1)', opacity: '1' },
 				},
-				'float': {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-20px)' }
-				}
-			}
-		}
+				float: {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-16px)' },
+				},
+				pulseGlow: {
+					'0%, 100%': { opacity: '0.4' },
+					'50%': { opacity: '0.8' },
+				},
+				gradientShift: {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+				},
+				drift: {
+					'0%, 100%': { transform: 'translate(0, 0)' },
+					'25%': { transform: 'translate(10px, -10px)' },
+					'50%': { transform: 'translate(-5px, 5px)' },
+					'75%': { transform: 'translate(5px, 10px)' },
+				},
+				beam: {
+					'0%, 100%': { opacity: '0.3', transform: 'scaleY(1)' },
+					'50%': { opacity: '0.7', transform: 'scaleY(1.05)' },
+				},
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+			},
+			boxShadow: {
+				'glow-sm': '0 0 20px -5px rgba(168, 85, 247, 0.3)',
+				'glow': '0 0 30px -5px rgba(168, 85, 247, 0.4)',
+				'glow-lg': '0 0 50px -10px rgba(168, 85, 247, 0.5)',
+				'glow-magenta': '0 0 40px -10px rgba(217, 70, 239, 0.4)',
+				'glow-blue': '0 0 40px -10px rgba(59, 130, 246, 0.3)',
+			},
+		},
 	},
-	plugins: [require('@tailwindcss/typography')]
+	plugins: [require('@tailwindcss/typography')],
 };
-
